@@ -1,4 +1,41 @@
-# CODING AGENTS: READ THIS FIRST
+# ManagerOX — Landing Page
+
+Next.js (App Router) + Tailwind CSS implementation of the ManagerOX landing page
+designed in Claude Design. The design source and its chat transcripts are kept in
+this repo as reference — see [Design handoff](#design-handoff) below.
+
+```bash
+npm install
+npm run dev     # http://localhost:3000
+npm run build   # production build
+npm start       # serve the production build
+npm run lint
+```
+
+## Layout
+
+| Path                 | What's in it                                                             |
+| -------------------- | ------------------------------------------------------------------------ |
+| `app/page.tsx`       | Composes the nine sections of the page                                   |
+| `app/layout.tsx`     | Fonts (Plus Jakarta Sans, Caveat), metadata                              |
+| `app/globals.css`    | Design tokens — the palette is pinned to the design's exact hex values   |
+| `app/components/`    | One component per section, plus `Icon` and small shared primitives       |
+| `app/data/content.ts`| Every string and list on the page                                        |
+| `assets/`            | The dashboard and phone mockups, statically imported by `next/image`     |
+| `project/`, `chats/` | The original Claude Design bundle (reference only, excluded from linting) |
+
+All copy lives in `app/data/content.ts`, so wording changes need no component edits.
+
+Two components are client components because they hold interaction state:
+`SiteHeader` (mobile menu) and `Faq` (accordion). Everything else renders on the
+server.
+
+---
+
+# Design handoff
+
+> The original instructions that shipped with the Claude Design export, kept for
+> reference.
 
 This is a **handoff bundle** from Claude Design (claude.ai/design).
 

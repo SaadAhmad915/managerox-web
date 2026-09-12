@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens for the ManagerOX landing page.
+ *
+ * The palette is pinned to the exact hex values used in the design source
+ * (project/ManagerOX Landing.dc.html) rather than inheriting Tailwind v4's
+ * OKLCH defaults, which render a shade or two off. Names stay conventional so
+ * `bg-blue-600` / `text-slate-500` mean what they usually mean.
+ */
+@theme {
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-script: var(--font-caveat), ui-serif, cursive;
+
+  /* Brand blues */
+  --color-blue-50: #eff6ff;
+  --color-blue-100: #dbeafe;
+  --color-blue-200: #bfdbfe;
+  --color-blue-400: #60a5fa;
+  --color-blue-500: #3b82f6;
+  --color-blue-600: #2563eb;
+  --color-blue-700: #1d4ed8;
+  --color-blue-800: #1e40af;
+
+  /* Neutrals */
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
+
+  /* Accents — feature / why-point icon tints */
+  --color-green-100: #dcfce7;
+  --color-green-600: #16a34a;
+  --color-orange-100: #ffedd5;
+  --color-orange-600: #ea580c;
+  --color-violet-100: #ede9fe;
+  --color-violet-600: #7c3aed;
+  --color-emerald-100: #d1fae5;
+  --color-emerald-600: #059669;
+  --color-amber-500: #f59e0b;
+
+  /* One-off surfaces that sit between the standard steps */
+  --color-hairline: #eef2f7; /* card + section borders */
+  --color-line: #e8edf4; /* FAQ card border */
+  --color-tint: #fafcff; /* FAQ card fill */
+  --color-midnight: #0b1526; /* footer */
+  --color-hero-top: #f3f7fd;
+  --color-hero-bottom: #eaf1fb;
+}
