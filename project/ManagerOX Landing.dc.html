@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0" rel="stylesheet">
+<style>
+  html,body{margin:0;padding:0;background:#fff;}
+  body{font-family:'Plus Jakarta Sans',sans-serif;color:#0f172a;-webkit-font-smoothing:antialiased;}
+  a{color:#2563eb;text-decoration:none;} a:hover{color:#1d4ed8;}
+  *{box-sizing:border-box;}
+</style>
+</helmet>
+
+<!-- NAV -->
+<header data-screen-label="Nav" style="position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.92);backdrop-filter:blur(12px);border-bottom:1px solid #eef2f7;">
+  <div style="max-width:1160px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px;">
+    <div>
+      <div style="font-size:22px;font-weight:800;letter-spacing:-0.5px;">Manager<span style="color:#2563eb;">OX</span></div>
+      <div style="font-size:9px;letter-spacing:1.5px;color:#94a3b8;font-weight:600;text-transform:uppercase;">Organize · Engage · Grow</div>
+    </div>
+    <nav style="display:flex;gap:28px;align-items:center;font-size:14px;font-weight:600;color:#475569;flex-wrap:wrap;">
+      <a href="#" style="color:#2563eb;border-bottom:2px solid #2563eb;padding-bottom:3px;">Home</a>
+      <a href="#" style="color:#475569;" style-hover="color:#2563eb;">Features</a>
+      <a href="#" style="color:#475569;" style-hover="color:#2563eb;">Solutions</a>
+      <a href="#" style="color:#475569;" style-hover="color:#2563eb;">Why ManagerOX</a>
+      <a href="#" style="color:#475569;" style-hover="color:#2563eb;">Pricing</a>
+      <a href="#" style="color:#475569;" style-hover="color:#2563eb;">FAQ</a>
+    </nav>
+    <a href="#" style="background:#2563eb;color:#fff;font-size:13px;font-weight:700;padding:11px 20px;border-radius:8px;white-space:nowrap;" style-hover="background:#1d4ed8;color:#fff;">Get Started Free</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section data-screen-label="Hero" style="background:linear-gradient(180deg,#f3f7fd 0%,#eaf1fb 100%);overflow:hidden;">
+  <div style="max-width:1160px;margin:0 auto;padding:72px 24px 88px;display:grid;grid-template-columns:minmax(300px,1fr) minmax(320px,1.15fr);gap:48px;align-items:center;">
+    <div>
+      <div style="display:inline-block;background:#dbeafe;color:#1d4ed8;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:7px 14px;border-radius:999px;">All-in-One CRM for Modern Businesses</div>
+      <h1 style="font-size:44px;line-height:1.12;font-weight:800;letter-spacing:-1.2px;margin:22px 0 18px;text-wrap:pretty;">Manage Relationships.<br>Drive Growth.<br>Do More with<br><span style="color:#2563eb;">ManagerOX.</span></h1>
+      <p style="font-size:16px;line-height:1.65;color:#475569;margin:0 0 28px;max-width:420px;">A powerful, easy-to-use CRM that helps you manage customers, streamline your sales process, and build lasting business relationships.</p>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;">
+        <a href="#" style="background:#2563eb;color:#fff;font-size:14px;font-weight:700;padding:14px 24px;border-radius:9px;display:inline-flex;align-items:center;gap:8px;" style-hover="background:#1d4ed8;color:#fff;">Get Started Free <span style="font-size:16px;">→</span></a>
+        <a href="#" style="background:#fff;color:#1e293b;font-size:14px;font-weight:700;padding:14px 24px;border-radius:9px;border:1px solid #cbd5e1;display:inline-flex;align-items:center;gap:8px;" style-hover="border-color:#2563eb;color:#2563eb;"><span style="width:18px;height:18px;border-radius:50%;background:#2563eb;color:#fff;display:inline-flex;align-items:center;justify-content:center;"><span style="font-family:'Material Symbols Rounded';font-size:12px;">play_arrow</span></span> Watch Demo</a>
+      </div>
+      <div style="display:flex;gap:18px;margin-top:24px;font-size:12.5px;color:#64748b;font-weight:600;flex-wrap:wrap;">
+        <span><span style="color:#16a34a;">✓</span> No credit card required</span>
+        <span><span style="color:#16a34a;">✓</span> Setup in minutes</span>
+      </div>
+      <div style="margin-top:8px;font-size:12.5px;color:#64748b;font-weight:600;"><span style="color:#16a34a;">✓</span> Trusted by growing businesses</div>
+    </div>
+
+    <!-- Device mockups -->
+    <div style="position:relative;min-height:440px;">
+      <!-- Desktop dashboard -->
+      <div style="position:absolute;right:0;top:16px;width:90%;background:#0f172a;border-radius:16px;padding:7px;box-shadow:0 30px 60px -20px rgba(15,23,42,0.35);">
+        <img src="uploads/pasted-1789197500662-0.png" alt="ManagerOX dashboard" style="display:block;width:100%;border-radius:10px;">
+      </div>
+      <!-- Phone -->
+      <img src="uploads/pasted-1789197681687-0.png" alt="ManagerOX mobile app" style="position:absolute;left:0;top:56px;width:178px;filter:drop-shadow(0 24px 40px rgba(15,23,42,0.35));">
+      <sc-if value="{{ showAnnotation }}" hint-placeholder-val="{{ true }}">
+        <div style="position:absolute;right:8px;bottom:-24px;font-family:Caveat,cursive;font-size:24px;color:#1e293b;transform:rotate(-4deg);">↖ Your Business<br><span style="margin-left:18px;">in Your Hands</span></div>
+      </sc-if>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section data-screen-label="Features" style="background:#fff;">
+  <div style="max-width:1160px;margin:0 auto;padding:80px 24px;">
+    <div style="text-align:center;margin-bottom:44px;">
+      <div style="display:inline-block;background:#eff6ff;color:#1d4ed8;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:7px 14px;border-radius:999px;">Powerful Features</div>
+      <h2 style="font-size:34px;font-weight:800;letter-spacing:-0.8px;margin:16px 0 10px;">Everything You Need in One Platform</h2>
+      <p style="font-size:15px;color:#64748b;margin:0;">ManagerOX brings your people, processes, and data together to help you work smarter and grow faster.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;">
+      <sc-for list="{{ features }}" as="f" hint-placeholder-count="6">
+        <div style="border:1px solid #eef2f7;border-radius:14px;padding:22px;display:flex;gap:16px;align-items:flex-start;background:#fff;" style-hover="border-color:#bfdbfe;box-shadow:0 12px 28px -14px rgba(37,99,235,0.25);">
+          <div style="width:46px;height:46px;border-radius:12px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:{{ f.tint }};">
+            <span style="font-family:'Material Symbols Rounded';font-size:24px;color:{{ f.ink }};">{{ f.icon }}</span>
+          </div>
+          <div>
+            <div style="font-size:15px;font-weight:800;margin-bottom:5px;">{{ f.title }}</div>
+            <div style="font-size:13px;color:#64748b;line-height:1.55;">{{ f.desc }}</div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section data-screen-label="Why" style="background:#f8fafc;border-top:1px solid #eef2f7;border-bottom:1px solid #eef2f7;">
+  <div style="max-width:1160px;margin:0 auto;padding:80px 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:56px;align-items:center;">
+    <div>
+      <div style="display:inline-block;background:#e2e8f0;color:#334155;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:7px 14px;border-radius:999px;">Why ManagerOX?</div>
+      <h2 style="font-size:34px;font-weight:800;letter-spacing:-0.8px;margin:18px 0 16px;line-height:1.15;">A Smarter Way<br>to Grow Your Business</h2>
+      <p style="font-size:15px;color:#64748b;line-height:1.65;margin:0 0 26px;max-width:420px;">Whether you're a small business or a large enterprise, ManagerOX gives you the tools to manage, engage, and grow — all in one place.</p>
+      <a href="#" style="background:#2563eb;color:#fff;font-size:14px;font-weight:700;padding:13px 24px;border-radius:9px;display:inline-flex;align-items:center;gap:8px;" style-hover="background:#1d4ed8;color:#fff;">Learn More <span>→</span></a>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:22px;">
+      <sc-for list="{{ whyPoints }}" as="w" hint-placeholder-count="4">
+        <div style="display:flex;gap:16px;align-items:flex-start;">
+          <div style="width:44px;height:44px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:{{ w.tint }};"><span style="font-family:'Material Symbols Rounded';font-size:22px;color:{{ w.ink }};">{{ w.icon }}</span></div>
+          <div>
+            <div style="font-size:15px;font-weight:800;margin-bottom:3px;">{{ w.title }}</div>
+            <div style="font-size:13.5px;color:#64748b;">{{ w.desc }}</div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section data-screen-label="Industries" style="background:#fff;">
+  <div style="max-width:1160px;margin:0 auto;padding:72px 24px;text-align:center;">
+    <div style="display:inline-block;background:#eff6ff;color:#1d4ed8;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:7px 14px;border-radius:999px;">Built for Every Industry</div>
+    <h2 style="font-size:32px;font-weight:800;letter-spacing:-0.8px;margin:16px 0 8px;">Trusted Across Industries</h2>
+    <p style="font-size:15px;color:#64748b;margin:0 0 40px;">ManagerOX adapts to your business needs, no matter your industry.</p>
+    <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;">
+      <sc-for list="{{ industries }}" as="ind" hint-placeholder-count="7">
+        <div style="width:128px;display:flex;flex-direction:column;align-items:center;gap:10px;">
+          <div style="width:52px;height:52px;border-radius:50%;border:1.5px solid #bfdbfe;display:flex;align-items:center;justify-content:center;"><span style="font-family:'Material Symbols Rounded';font-size:24px;color:#2563eb;">{{ ind.icon }}</span></div>
+          <div style="font-size:12.5px;font-weight:700;color:#334155;">{{ ind.label }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section data-screen-label="Testimonials" style="background:#f8fafc;border-top:1px solid #eef2f7;">
+  <div style="max-width:1160px;margin:0 auto;padding:76px 24px;">
+    <div style="text-align:center;margin-bottom:40px;">
+      <div style="display:inline-block;background:#e2e8f0;color:#334155;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:7px 14px;border-radius:999px;">What Our Customers Say</div>
+      <h2 style="font-size:32px;font-weight:800;letter-spacing:-0.8px;margin:16px 0 0;">Loved by Businesses Like Yours</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;">
+      <sc-for list="{{ testimonials }}" as="t" hint-placeholder-count="3">
+        <div style="background:#fff;border:1px solid #eef2f7;border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:18px;">
+          <div style="font-size:14px;line-height:1.65;color:#334155;">“{{ t.quote }}”</div>
+          <div style="display:flex;align-items:center;gap:12px;margin-top:auto;">
+            <div style="width:40px;height:40px;border-radius:50%;background:#dbeafe;color:#1d4ed8;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;">{{ t.initials }}</div>
+            <div style="flex:1;">
+              <div style="font-size:13.5px;font-weight:800;">{{ t.name }}</div>
+              <div style="font-size:11.5px;color:#64748b;">{{ t.role }}</div>
+            </div>
+            <div style="color:#f59e0b;font-size:12px;letter-spacing:1px;">★★★★★</div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section data-screen-label="CTA" style="background:linear-gradient(135deg,#1e40af 0%,#2563eb 55%,#1d4ed8 100%);">
+  <div style="max-width:1160px;margin:0 auto;padding:72px 24px;text-align:center;color:#fff;">
+    <div style="display:inline-block;background:rgba(255,255,255,0.15);font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:7px 14px;border-radius:999px;">Get Started Today</div>
+    <h2 style="font-size:34px;font-weight:800;letter-spacing:-0.8px;margin:18px 0 12px;">Ready to Grow with ManagerOX?</h2>
+    <p style="font-size:15.5px;color:#dbeafe;margin:0 0 30px;">Join businesses that trust ManagerOX to manage their most important relationships.</p>
+    <div style="display:flex;justify-content:center;gap:14px;flex-wrap:wrap;">
+      <a href="#" style="background:#fff;color:#1d4ed8;font-size:14px;font-weight:700;padding:14px 26px;border-radius:9px;display:inline-flex;align-items:center;gap:8px;" style-hover="background:#eff6ff;color:#1d4ed8;">Get Started Free <span>→</span></a>
+      <a href="#" style="border:1.5px solid rgba(255,255,255,0.5);color:#fff;font-size:14px;font-weight:700;padding:14px 26px;border-radius:9px;display:inline-flex;align-items:center;gap:8px;" style-hover="border-color:#fff;color:#fff;"><span style="width:18px;height:18px;border-radius:50%;background:#fff;color:#1d4ed8;display:inline-flex;align-items:center;justify-content:center;"><span style="font-family:'Material Symbols Rounded';font-size:12px;">play_arrow</span></span> Watch Demo</a>
+    </div>
+    <div style="display:flex;justify-content:center;gap:22px;margin-top:26px;font-size:12.5px;color:#dbeafe;font-weight:600;flex-wrap:wrap;">
+      <span>✓ No credit card required</span><span>✓ Setup in minutes</span><span>✓ Trusted by growing businesses</span>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section data-screen-label="FAQ" style="background:#fff;">
+  <div style="max-width:1160px;margin:0 auto;padding:76px 24px;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:32px;">
+      <div>
+        <div style="display:inline-block;background:#f1f5f9;color:#334155;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:7px 14px;border-radius:999px;">Frequently Asked Questions</div>
+        <h2 style="font-size:30px;font-weight:800;letter-spacing:-0.8px;margin:14px 0 0;">Got Questions? We've Got Answers.</h2>
+      </div>
+      <a href="#" style="border:1px solid #cbd5e1;color:#2563eb;font-size:13px;font-weight:700;padding:11px 20px;border-radius:9px;" style-hover="border-color:#2563eb;">View All FAQs</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px;align-items:start;">
+      <sc-for list="{{ faqs }}" as="q" hint-placeholder-count="6">
+        <div style="border:1px solid #e8edf4;border-radius:10px;background:#fafcff;overflow:hidden;">
+          <button onClick="{{ q.toggle }}" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;background:none;border:none;padding:16px 18px;font-family:inherit;font-size:14px;font-weight:700;color:#0f172a;cursor:pointer;text-align:left;">
+            {{ q.question }}
+            <span style="color:#2563eb;font-size:18px;font-weight:600;flex-shrink:0;">{{ q.mark }}</span>
+          </button>
+          <sc-if value="{{ q.open }}" hint-placeholder-val="{{ false }}">
+            <div style="padding:0 18px 16px;font-size:13.5px;color:#64748b;line-height:1.6;">{{ q.answer }}</div>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer data-screen-label="Footer" style="background:#0b1526;color:#cbd5e1;">
+  <div style="max-width:1160px;margin:0 auto;padding:60px 24px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px;">
+    <div>
+      <div style="font-size:20px;font-weight:800;color:#fff;">Manager<span style="color:#60a5fa;">OX</span></div>
+      <div style="font-size:9px;letter-spacing:1.5px;color:#64748b;font-weight:600;text-transform:uppercase;margin:4px 0 16px;">Organize · Engage · Grow</div>
+      <p style="font-size:13px;line-height:1.65;color:#94a3b8;margin:0 0 18px;max-width:260px;">A modern CRM to help you manage relationships, streamline your sales process, and grow your business.</p>
+      <div style="display:flex;gap:10px;">
+        <sc-for list="{{ socials }}" as="s" hint-placeholder-count="4">
+          <a href="#" style="width:32px;height:32px;border-radius:8px;background:#1e293b;color:#cbd5e1;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;" style-hover="background:#2563eb;color:#fff;">{{ s }}</a>
+        </sc-for>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:14px;font-weight:800;color:#fff;margin-bottom:16px;">Quick Links</div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;">
+        <a href="#" style="color:#94a3b8;" style-hover="color:#fff;">Home</a>
+        <a href="#" style="color:#94a3b8;" style-hover="color:#fff;">Features</a>
+        <a href="#" style="color:#94a3b8;" style-hover="color:#fff;">Solutions</a>
+        <a href="#" style="color:#94a3b8;" style-hover="color:#fff;">Pricing</a>
+        <a href="#" style="color:#94a3b8;" style-hover="color:#fff;">FAQ</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:14px;font-weight:800;color:#fff;margin-bottom:16px;">Resources</div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;">
+        <a href="#" style="color:#94a3b8;" style-hover="color:#fff;">Blog</a>
+        <a href="#" style="color:#94a3b8;" style-hover="color:#fff;">Help Center</a>
+        <a href="#" style="color:#94a3b8;" style-hover="color:#fff;">Product Guide</a>
+        <a href="#" style="color:#94a3b8;" style-hover="color:#fff;">Privacy Policy</a>
+        <a href="#" style="color:#94a3b8;" style-hover="color:#fff;">Terms of Service</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:14px;font-weight:800;color:#fff;margin-bottom:16px;">Get in Touch</div>
+      <div style="display:flex;flex-direction:column;gap:12px;font-size:13px;color:#94a3b8;">
+        <div style="display:flex;align-items:center;gap:10px;"><span style="font-family:'Material Symbols Rounded';font-size:16px;color:#60a5fa;">location_on</span>Islamabad, Pakistan</div>
+        <div style="display:flex;align-items:center;gap:10px;"><span style="font-family:'Material Symbols Rounded';font-size:16px;color:#60a5fa;">mail</span>info@managerox.com</div>
+        <div style="display:flex;align-items:center;gap:10px;"><span style="font-family:'Material Symbols Rounded';font-size:16px;color:#60a5fa;">call</span>+92 300 1234567</div>
+        <div style="display:flex;align-items:center;gap:10px;"><span style="font-family:'Material Symbols Rounded';font-size:16px;color:#60a5fa;">schedule</span>Mon – Fri, 9:00 AM – 6:00 PM</div>
+      </div>
+    </div>
+  </div>
+  <div style="max-width:1160px;margin:36px auto 0;padding:20px 24px;border-top:1px solid #1e293b;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12px;color:#64748b;">
+    <div>© 2026 ManagerOX. All rights reserved.</div>
+    <div>Built for businesses that believe in better relationships.</div>
+  </div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showAnnotation&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Hero&quot;}}">
+class Component extends DCLogic {
+  state = { openFaq: -1 };
+  renderVals() {
+    const faqsData = [
+      ["What is ManagerOX?", "ManagerOX is an all-in-one CRM that helps you manage leads, contacts, deals, and tasks in a single easy-to-use platform."],
+      ["Can I try it for free?", "Yes — start with a free plan, no credit card required. Upgrade whenever your team is ready."],
+      ["How much does it cost?", "Plans scale with your team size. See the Pricing page for full details, or contact us for enterprise pricing."],
+      ["Can I customize it for my business?", "Absolutely. Custom fields, pipelines, and workflows let you tailor ManagerOX to how your business works."],
+      ["Is my data secure?", "Your data is protected with enterprise-grade encryption, regular backups, and role-based access controls."],
+      ["Do you offer support?", "Yes — our support team is available Mon–Fri, with a full Help Center and product guides anytime."],
+    ];
+    return {
+      showAnnotation: this.props.showAnnotation ?? true,
+
+      features: [
+        { icon: "person_add", title: "Lead & Contact Management", desc: "Capture, organize, and track every lead and customer.", tint: "#dbeafe", ink: "#2563eb" },
+        { icon: "filter_alt", title: "Sales Pipeline", desc: "Visualize your deals and move them to closure.", tint: "#dcfce7", ink: "#16a34a" },
+        { icon: "event_available", title: "Task & Activity Tracking", desc: "Stay on top of your follow-ups and meetings.", tint: "#ffedd5", ink: "#ea580c" },
+        { icon: "monitoring", title: "Reports & Analytics", desc: "Get real-time insights into your business performance.", tint: "#ede9fe", ink: "#7c3aed" },
+        { icon: "groups", title: "Team Collaboration", desc: "Work together, stay aligned, and achieve more.", tint: "#d1fae5", ink: "#059669" },
+        { icon: "tune", title: "Customizable & Flexible", desc: "Tailor ManagerOX to fit your business needs.", tint: "#dbeafe", ink: "#3b82f6" },
+      ],
+      whyPoints: [
+        { icon: "check_circle", title: "Easy to Use", desc: "Get started quickly with an intuitive interface.", tint: "#dcfce7", ink: "#16a34a" },
+        { icon: "verified_user", title: "Secure & Reliable", desc: "Your data is protected with enterprise-grade security.", tint: "#dbeafe", ink: "#2563eb" },
+        { icon: "trending_up", title: "Scalable for Any Business", desc: "From startups to large enterprises.", tint: "#ede9fe", ink: "#7c3aed" },
+        { icon: "support_agent", title: "Dedicated Support", desc: "We're here whenever you need help.", tint: "#ffedd5", ink: "#ea580c" },
+      ],
+      industries: [
+        { icon: "apartment", label: "Real Estate" },
+        { icon: "construction", label: "Construction" },
+        { icon: "shopping_cart", label: "Retail & E-commerce" },
+        { icon: "school", label: "Education" },
+        { icon: "favorite", label: "Health & Wellness" },
+        { icon: "work", label: "Professional Services" },
+        { icon: "more_horiz", label: "And More" },
+      ],
+      testimonials: [
+        { quote: "ManagerOX has completely transformed how we manage our clients and sales pipeline. It's simple, powerful, and reliable.", name: "Ahsan Malik", role: "CEO, Zameen Group", initials: "AM" },
+        { quote: "The best CRM we've used so far. Our team is more productive and our sales have grown significantly.", name: "Sara Khan", role: "Director, Al-Fatah", initials: "SK" },
+        { quote: "ManagerOX gives us real-time insights and helps us stay organized. Highly recommended!", name: "Bilal Ahmed", role: "Founder, Skyline Developers", initials: "BA" },
+      ],
+      socials: ["in", "f", "x", "ig"],
+      faqs: faqsData.map(([question, answer], i) => ({
+        question, answer,
+        open: this.state.openFaq === i,
+        mark: this.state.openFaq === i ? "−" : "+",
+        toggle: () => this.setState(s => ({ openFaq: s.openFaq === i ? -1 : i })),
+      })),
+    };
+  }
+}
+</script>
+</body>
+</html>
